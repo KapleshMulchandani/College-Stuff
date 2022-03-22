@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+//Author: Gaurav Amarnani.
+
 void sortArray(int arr[], int size) {
 	int a = 0;
 	for(int i =0; i < n; ++i) {
