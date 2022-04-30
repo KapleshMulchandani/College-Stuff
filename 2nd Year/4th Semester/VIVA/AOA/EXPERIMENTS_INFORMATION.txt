@@ -1,0 +1,13 @@
+Experiments Information: 
+
+1. Selection Sort and Insertion Sort.
+2. Merge Sort and Quick Sort.
+3. Min Max Problem.
+4. Greedy Method - Knapsack Problem.
+5. Greedy Method - Job Sequencing with Deadline.
+6. Minimum Cost Spanning Trees - Kruskal's Algorithm and Prim’s Algorithm.
+7. 0/1 Knapsack Problem.
+8. Longest Common Subsequence Algorithm.
+9. N-Queen Problem.
+10. Graph Coloring Problem.
+11. String Matching Algorithms: Naive String Matching Algorithm and Kuth-Morris-Pratt Algorithm.
