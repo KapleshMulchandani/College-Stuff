@@ -2,7 +2,7 @@
 
 //Author: Gaurav Amarnani.
 
-void sortArray(int arr[], int size) {
+void sortArray(int arr[], int n) {
 	int a = 0;
 	for(int i =0; i < n; ++i) {
 		for(int j = i+1; j < n; ++j) {
@@ -26,7 +26,7 @@ void main(){
 			if(block[j]==0)
 				j++;
 			if(block[j] - process[i] > 0) {
-				printf("%d is assigned under %d. /n", process[i], block[j]);
+				printf("%d is assigned under %d. With remaining space as %d under this block. \n", process[i], block[j], (block[j] - process[i]));
 				block[j]=0;
 				process[i]=0;
 				break;
