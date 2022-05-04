@@ -1,0 +1,67 @@
+1. 
+Exploring basic commands of Unix/Linux
+General Purpose Utilities (who,whoami,which,uname,tty,cal, date,bc)
+Working With Directories (mkdir,rmdir,ls,cd,rm)
+File Handling Commands (touch,cat,cp,rm,mv,wc,cmp,diff,comm,ln,cut)
+Changing File Attributes (chmod,umask)
+
+2. 
+Write a program to demonstrate CPU scheduling algorithms like FCFS, SJF, SRT, Round Robin, priority(preemptive or non preemptive) etc.
+
+3. 
+Display top 10 processes in descending order
+Display processes with highest memory usage.
+Display current logged in user and logname.
+
+4.
+Display current shell, home directory, operating system type, current path setting, current working directory. Display OS version, release number, kernel version.
+
+5A.
+Create a child process in Linux using the fork system call. From the child process obtain the process ID of both child and parent by using getpid and getppid system calls. Explore wait and waitpid before termination of process.
+
+5B.
+Write a program to implement any 2 disk scheduling algorithms.
+
+6.
+Extend the above experiment to explore the following system calls: open, read, write, close, getpid, setpid, getuid, getgid, getegid, geteuid.
+
+8.
+Aim : Write a program to implement dynamic partitioning placement algorithms i.e Best Fit, First-Fit, Worst-Fit etc.
+
+9. 
+Define memory partitions and process size. Allocate memory to incoming process.
+Instructions : Write theory for the following topics
+File allocation methods
+Types of file allocation method
+Advantages and Disadvantages of each method
+Conclusion.
+Outcome :1. Process are allocated successfully or Process are not allocated as memory is not available.
+
+10. 
+Implement producer consumer problem using semaphore.
+Instructions : Write theory for the following topics
+Semaphores
+Types of semaphores
+Challenges in using semaphores
+Conclusion.
+Outcome :Need to show the coordination between cooperating process.
+
+11.
+Aim : WAP to simulate Banker’s Algorithm.
+
+12. 
+AIM : To implement Various page Replacement policies, FIFO, Optimal, LRU )
+Description :
+1. FIFO PAGE REPLACEMENT Algorithm 
+2. LRU PAGE REPLACEMENT ALGORITHM
+3. Optimal Page Replacement Algorithm
+
+
+
+
+
+
+
+
+
+
