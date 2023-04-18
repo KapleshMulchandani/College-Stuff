@@ -71,6 +71,8 @@ public class LexicalAnalyzer {
                     if (!((currentChar > 64 && currentChar < 91) || (currentChar > 96 && currentChar < 123) || (currentChar > 47 && currentChar < 58) || currentChar == 95))
                         return false;
                 }
+            } else {
+                return false;
             }
             //Checking if the variable has a data type with it or not.
             if (!(KEYWORDS.contains(tokens[position - 1])))
