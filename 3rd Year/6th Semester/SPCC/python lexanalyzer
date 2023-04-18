@@ -1,0 +1,41 @@
+import re
+
+# Define a list of tokens that the lexer can recognize
+# Each token is represented as a tuple of (token_type, token_pattern)
+tokens = [
+    ('INT', r'\d+'),  # Integer literal
+    ('PLUS', r'\+'),  # Addition operator
+    ('MINUS', r'-'),  # Subtraction operator
+    ('TIMES', r'\*'), # Multiplication operator
+    ('DIVIDE', r'/'), # Division operator
+    ('LPAREN', r'\('), # Left parenthesis
+    ('RPAREN', r'\)'), # Right parenthesis
+    ('IDENT', r'[a-zA-Z_][a-zA-Z0-9_]*'), # Identifier
+]
+
+# Define a list of keywords
+keywords = [
+    'if',
+    'else',
+    'while',
+    'for',
+    'in',
+    'break',
+    'continue',
+    'return',
+]
+
+# Define a function to tokenize the input string
+def tokenize(input_string):
+    token_regex = '|'.join('(?P<%s>%s)' % pair for pair in tokens)
+    for match in re.finditer(token_regex, input_string):
+        token_type = match.lastgroup
+        token_value = match.group(token_type)
+        if token_type == 'IDENT' and token_value in keywords:
+            token_type = token_value.upper()
+        yield token_type, token_value
+
+# Example usage
+input_string = '#include <stdio.h> int main() { int x, y; scanf("%d%d", &x, &y); printf("%d", x + y); }'
+for token in tokenize(input_string):
+    print(token)
